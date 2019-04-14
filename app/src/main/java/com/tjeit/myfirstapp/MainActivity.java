@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String userIdStr = inputIdEditText.getText().toString();
-                String userpwStr = inpuPwEditText.getText().toString();
+                String userPwStr = inpuPwEditText.getText().toString();
 
                 Toast.makeText(MainActivity.this, userIdStr, Toast.LENGTH_SHORT).show();
 
                 // contentTxtView.setText("ID:" + userIdStr + "   PW:" + userpwStr);
-                contentTxtView.setText(String.format("ID %d, PW %D",userIdStr, userpwStr));
+                contentTxtView.setText(String.format("ID %d, PW %D",userIdStr, userPwStr));
 
             }
         });
