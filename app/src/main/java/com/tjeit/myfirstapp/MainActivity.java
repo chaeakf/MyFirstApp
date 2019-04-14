@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Toast.makeText(MainActivity.this, userIdStr, Toast.LENGTH_SHORT).show();
 
-                // contentTxtView.setText("ID:" + userIdStr + "   PW:" + userpwStr);
+                // contentTxtView.setText("ID:" + userIdStr + "   PW:" + userPwStr);
                 contentTxtView.setText(String.format("ID %d, PW %D",userIdStr, userPwStr));
 
             }
