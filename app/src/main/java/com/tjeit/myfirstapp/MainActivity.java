@@ -9,9 +9,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    //TextView contentTxtView;
+    TextView contentTxtView;
     EditText inputIdEditText;
-   // EditText inpuPwEditText;
+    EditText inpuPwEditText;
     Button btnLonin;
 
     @Override
@@ -19,20 +19,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //contentTxtView = findViewById(R.id.contentTxtView);
+        contentTxtView = findViewById(R.id.contentTxtView);
         inputIdEditText = findViewById(R.id.inputIdEditText);
-       // inpuPwEditText = findViewById(R.id.inpuPwEditText);
+        inpuPwEditText = findViewById(R.id.inpuPwEditText);
         btnLonin = findViewById(R.id.btnLonin);
 
         btnLonin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String userIdStr = inputIdEditText.getText().toString();
-                //String userpwStr = inpuPwEditText.getText().toString();
+                String userpwStr = inpuPwEditText.getText().toString();
 
                 Toast.makeText(MainActivity.this, userIdStr, Toast.LENGTH_SHORT).show();
 
-               // contentTxtView.setText("ID:" + userIdStr + "   PW:" + userpwStr);
+                // contentTxtView.setText("ID:" + userIdStr + "   PW:" + userpwStr);
+                contentTxtView.setText(String.format("ID %d, PW %D",userIdStr, userpwStr));
+
             }
         });
 
