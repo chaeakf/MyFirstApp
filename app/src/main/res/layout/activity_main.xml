@@ -26,6 +26,7 @@
         android:background="#FFFFFF">
 
         <EditText
+            android:id="@+id/inputIdEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -33,6 +34,7 @@
             android:inputType="text"
             />
         <EditText
+            android:id="@+id/inpuPwEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -44,6 +46,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnLonin"
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -62,6 +65,7 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/contentTxtView"
         android:layout_marginTop="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
